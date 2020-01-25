@@ -1,0 +1,2 @@
+# noita-more-shop
+NoitaのMoreShopMOD
