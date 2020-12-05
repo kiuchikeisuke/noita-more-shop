@@ -1,0 +1,7 @@
+<Mod
+	name="More Shop"
+	description="Increase the number of wands and spells sold to the shop to 6 and 12"
+	tags="gameplay,cheats,biomes"
+	dont_upload_files="mod.xml|version.txt"
+>
+</Mod>

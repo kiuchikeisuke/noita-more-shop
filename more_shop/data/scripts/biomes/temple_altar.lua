@@ -165,11 +165,14 @@ function spawn_all_shopitems( x, y )
 	for i=1,count do
 		if( i == sale_item_i ) then
 			generate_shop_item( x + (i - 1) * item_width, y, true, nil, true )
-			generate_shop_wand( x + (i - 1) * item_width + half_item_width, y - 30, true )
+			generate_shop_wand( x + (i - 1) * item_width, y - 60, true )
 		else
 			generate_shop_item( x + (i - 1) * item_width, y, false, nil, true )
-			generate_shop_wand( x + (i - 1) * item_width + half_item_width, y - 30, false )
+			generate_shop_wand( x + (i - 1) * item_width, y - 60, false )
 		end
+		generate_shop_item( x + (i - 1) * item_width, y - 25, false, nil, true )
+		LoadPixelScene( "data/biome_impl/temple/shop_second_row.png", "data/biome_impl/temple/shop_second_row_visual.png", x + (i-1)*item_width - 8, y - 22, "", true )
+		LoadPixelScene( "data/biome_impl/temple/shop_second_row.png", "data/biome_impl/temple/shop_second_row_visual.png", x + (i-1)*item_width - 8, y - 52, "", true )
 	end
 end
 
